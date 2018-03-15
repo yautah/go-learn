@@ -16,7 +16,7 @@ func Run() {
 	fmt.Printf("i have a number between %d, please guess\nguess: ", 100)
 	var reader *bufio.Reader = bufio.NewReader(os.Stdin)
 	for {
-		input, err := reader.ReadString('\r')
+		input, err := reader.ReadString('\n')
 		if err != nil {
 			fmt.Printf("oops, something got wrong....quit!\n")
 			return
