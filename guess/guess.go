@@ -1,4 +1,4 @@
-package main
+package guess
 
 import (
 	"bufio"
@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-func main() {
+func Run() {
 	var num = rand.New(rand.NewSource(time.Now().UnixNano()))
 	var s = num.Intn(100)
 	fmt.Printf("i have a number between %d, please guess\nguess: ", 100)
